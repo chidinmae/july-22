@@ -10,7 +10,7 @@ export default function ImageUrlForm() {
   const [importedUrl, setImportedUrl] = useState(false);
   const [randomColor, setRandomColor] = useState("");
 
-  const getRandomBgColor = () => {
+  const getRandomColor = () => {
     const x = Math.floor(Math.random() * 256);
     const y = Math.floor(Math.random() * 256);
     const z = Math.floor(Math.random() * 256);
@@ -98,7 +98,7 @@ export default function ImageUrlForm() {
                 <button
                   className="btn btn-primary btn-rounded"
                   onClick={() => {
-                    setRandomColor(getRandomBgColor());
+                    setRandomColor(getRandomColor());
                     submitForm();
                   }}
                   type="button"
